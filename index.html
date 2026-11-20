@@ -189,6 +189,32 @@
     text-transform:uppercase; letter-spacing:0.05em; color:var(--indigo);
     border:1px solid var(--line); padding:5px 10px;
   }
+  .timeline-org-head{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.6rem;
+    letter-spacing:-0.01em; margin-bottom:24px;
+  }
+  .roles{position:relative; padding-left:28px;}
+  .roles::before{
+    content:''; position:absolute; left:5px; top:8px; bottom:8px;
+    width:1px; background:var(--line);
+  }
+  .role{position:relative; padding-bottom:36px;}
+  .role:last-child{padding-bottom:0;}
+  .role::before{
+    content:''; position:absolute; left:-28px; top:7px;
+    width:11px; height:11px; border-radius:50%;
+    background:var(--paper); border:2px solid var(--indigo);
+  }
+  .role:first-child::before{background:var(--indigo);}
+  .role-title{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.2rem;
+    letter-spacing:-0.01em;
+  }
+  .role-date{
+    font-family:'JetBrains Mono', monospace; font-size:0.75rem;
+    color:var(--muted); text-transform:uppercase; letter-spacing:0.05em;
+    margin:4px 0 12px;
+  }
   @media (max-width:640px){
     .timeline-item{grid-template-columns:1fr; gap:10px;}
   }
@@ -411,7 +437,7 @@
     <div class="about-text">
       <p>I split my time between the two ends of a product: the part people see, and the part that makes it run.</p>
       <p>My design work leans editorial — clear hierarchy, restrained type, layouts built to be read, not just looked at. On the development side, I've built LedgerFlow, a double-entry accounting platform for small Nepali businesses, from database schema through to payment integration.</p>
-      <p>I'm currently interning as a graphic designer at Digital Techno Wiz.</p>
+      <p>I'm currently working as a graphic designer and video editor at Digital Techno Wiz.</p>
     </div>
     <div class="facts">
       <div class="fact"><span class="k">Design</span><span class="v">Adobe Illustrator, Photoshop, Lightroom, Canva</span></div>
@@ -435,13 +461,29 @@
       <div class="timeline-item">
         <div class="timeline-date">Jul 2026 — Present</div>
         <div>
-          <div class="timeline-role">Graphic Design Intern</div>
-          <div class="timeline-org">Digital Techno Wiz</div>
-          <p class="timeline-desc">Working on brand and visual design tasks as part of the design team, applying skills across identity, layout, and print/digital collateral.</p>
-          <div class="timeline-tags">
-            <span>Illustrator</span>
-            <span>Photoshop</span>
-            <span>Premiere Pro</span>
+          <div class="timeline-org-head">Digital Techno Wiz</div>
+          <div class="roles">
+            <div class="role">
+              <div class="role-title">Graphic Designer & Video Editor</div>
+              <div class="role-date">Oct 2026 — Present</div>
+              <p class="timeline-desc">Handling brand and visual design work alongside video editing — identity, layout, and print/digital collateral through to cut, motion, and color on video projects.</p>
+              <div class="timeline-tags">
+                <span>Illustrator</span>
+                <span>Photoshop</span>
+                <span>Premiere Pro</span>
+                <span>DaVinci Resolve</span>
+              </div>
+            </div>
+            <div class="role">
+              <div class="role-title">Graphic Design Intern</div>
+              <div class="role-date">Jul 2026 — Oct 2026</div>
+              <p class="timeline-desc">Worked on brand and visual design tasks as part of the design team, applying skills across identity, layout, and print/digital collateral.</p>
+              <div class="timeline-tags">
+                <span>Illustrator</span>
+                <span>Photoshop</span>
+                <span>Premiere Pro</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
